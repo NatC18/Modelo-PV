@@ -1,0 +1,117 @@
+    mujer.mouseenter(function(){
+        $(".mujer").animate({
+            height: '450px',
+            width: '450px'
+        }, 100);
+        $(".hombre").animate({
+            height: "350px",
+            width:"350px"
+
+        }, 100);
+
+
+    });
+
+    mujer.mouseleave(function(){
+        $(".mujer").animate({
+            height: '400px',
+            width: '400px'
+        }, 100);
+        $(".hombre").animate({
+            height: "400px",
+            width:"400px"
+
+        }, 100);
+    });
+
+    hombre.mouseenter(function(){
+        $(".hombre").animate({
+            height: '450px',
+            width: '450px'
+        }, 100);
+        $(".mujer").animate({
+            height: "350px",
+            width:"350px"
+
+        }, 100);
+
+
+    });
+
+    hombre.mouseleave(function(){
+        $(".hombre").animate({
+            height: '400px',
+            width: '400px'
+        }, 100);
+        $(".mujer").animate({
+            height: "400px",
+            width:"400px"
+
+        }, 100);       
+
+    });
+
+
+
+
+    div{
+    display: block;
+    position: absolute;
+    margin: 0px auto;
+}
+
+.pedirnombre{
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    font-family: Lunchbox Regular;
+    font-size: 30px;
+    display: block;
+    position:relative;
+    margin: 0 auto;
+}
+
+        <div>
+            <input type="text" class="pedirnombre" placeholder="Ingresa su nombre"/>
+        </div>
+        <br/>
+        <p>hola</p>
+
+
+
+    if (click_hombre == false, click_mujer == false){
+
+        $(mujer).hover(function(){
+            $(mujer).css("transform", "scale(1.1, 1.1)");
+            $(hombre).css("transform", "scale(0.9, 0.9)");
+            $(mujer).css("transition-duration", "0.5s");
+            $(hombre).css("transition-duration", "0.5s");
+
+
+
+        },function(){
+
+            $(mujer).css("transform", "scale(1, 1)");
+            $(hombre).css("transform", "scale(1, 1)");
+            $(mujer).css("transition-duration", "0.5s");
+            $(hombre).css("transition-duration", "0.5s");
+
+    });
+};
+    
+    if (click_mujer == false, click_hombre == false){
+
+    $(hombre).hover(function(){
+        $(hombre).css("transform", "scale(1.1, 1.1)");
+        $(mujer).css("transform", "scale(0.9, 0.9)");
+        $(hombre).css("transition-duration", "0.5s");
+        $(mujer).css("transition-duration", "0.5s");
+
+
+    },function(){
+        $(hombre).css("transform", "scale(1, 1)");
+        $(mujer).css("transform", "scale(1, 1)");
+        $(hombre).css("transition-duration", "0.5s");
+        $(mujer).css("transition-duration", "0.5s");
+    });
+};
