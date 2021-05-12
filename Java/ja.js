@@ -1,3 +1,7 @@
+function username() {
+    var userinput = document.getElementById('username').value;
+    console.log(userinput)
+}
 $(document).ready(function(){
     var mujer = $(".mujer");
     var hombre = $(".hombre");
@@ -77,6 +81,11 @@ $(document).ready(function(){
 
     );
 
+    function nombre_usuario(){
+        var input = document.getElementById("nombre");
+        alert(input);
+        console.log('nombre');
+    }
 
 
 
