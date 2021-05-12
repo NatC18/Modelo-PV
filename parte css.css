@@ -67,7 +67,7 @@ h1{
 
 
 
-#nombre{
+.nombre{
     font-family: Lunchbox Regular;
     width: 350px;
     height: 50px;
@@ -80,7 +80,7 @@ h1{
     padding: 10px 0px 0px 0px;
 }
 
-#ingresar{
+.ingresar{
     width: 150px;
     height: 60px;
     text-align: center;
@@ -120,4 +120,12 @@ h1{
   margin-top: -80px;
   font-size: 55px;
   color: #42424A;
+}
+
+.flex{
+    display: flex;
+}
+
+.radio_q{
+    size:10px;
 }
