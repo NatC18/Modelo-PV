@@ -1,6 +1,6 @@
 function username() {
-    var userinput = document.getElementById('username').value;
-    console.log(userinput)
+    var userinput = document.getElementById('nombre');
+        console.log(userinput)
 }
 $(document).ready(function(){
     var mujer = $(".mujer");
