@@ -81,11 +81,7 @@ $(document).ready(function(){
 
     );
 
-    function nombre_usuario(){
-        var input = document.getElementById("nombre");
-        alert(input);
-        console.log('nombre');
-    }
+
 
 
 
