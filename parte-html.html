@@ -142,9 +142,22 @@
             <button id="ingresar">Continuar</button>-->
             
             <form>
-                <input type='text' id='nombre' name='nombre' value='' placeholder="Ingresa tu nombre"><br>
-                <input type='submit' id ='ingresar' value='Continuar' onclick="username()"> 
+                <input type='text' class='nombre' name='nombre' value='' placeholder="Ingresa tu nombre"><br>
+                <input type='submit' class ='ingresar' value='Continuar' onclick='username()'> 
                 <!-- se supone que se guarda en la variable de la funcion username pero no funciona-->
+            </form>
+        </div>
+
+        <div class='flex'>
+            <form>
+                <input class='radio_q' type='radio' name='res' value='c' id='opcion A'>
+                <label for="opcion A">A</label><br>
+                <input class='radio_q' type='radio' name='res' value='m' id='opcion B'>   
+                <label for="opcion B">B</label><br>             
+                <input class='radio_q' type='radio' name='res' value='m' id='opcion C'>
+                <label for="opcion C">C</label><br>
+                <!--get element by value attr-->
+                <input type='submit' class='ingresar' value='continua'>
             </form>
         </div>
 
