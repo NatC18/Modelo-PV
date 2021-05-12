@@ -100,6 +100,24 @@ h1{
 #inp{
     display: block;
 }
-#niveles{
-  
+.titulo_niveles{
+  position: relative;
+  margin-top: 80px;
+}
+#titulo_slide4{
+  position: relative;
+  margin-top: 80px;
+  font-size: 55px;
+  color: #42424A;
+}
+#nro{
+  position: relative;
+  font-size: 100px;
+  color: #C13B18;
+}
+#dato1{
+  position: relative;
+  margin-top: -80px;
+  font-size: 55px;
+  color: #42424A;
 }
