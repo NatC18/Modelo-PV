@@ -134,9 +134,19 @@
             </svg>
         </div>
         <div id="inp">
+            <!--<form onsubmit="return false;">
             <input id="nombre" type="text" placeholder="Ingresa tu nombre">
-            <button id="ingresar">Continuar</button>
+            <input type='submit' onclick = "nombre_usuario()">
+            </form>
+            <button id="ingresar">Continuar</button>-->
+            
+            <form>
+                <input type='text' id='nombre' name='nombre' value='' placeholder="Ingresa tu nombre"><br>
+                <input type='submit' id ='ingresar' value='Continuar' onclick="username()"> 
+                <!-- se supone que se guarda en la variable de la funcion username pero no funciona-->
+            </form>
         </div>
     </body>
+    <!--para pasar pagians, redireccioner con url-->
 
 </html>
