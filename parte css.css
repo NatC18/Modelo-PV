@@ -67,7 +67,7 @@ h1{
 
 
 
-.nombre{
+#nombre{
     font-family: Lunchbox Regular;
     width: 350px;
     height: 50px;
@@ -127,5 +127,10 @@ h1{
 }
 
 .radio_q{
-    size:10px;
+    width: 2em;
+    height: 2em;
+}
+
+.res_radio{
+    font-size: 30px;
 }
