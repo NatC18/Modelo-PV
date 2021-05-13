@@ -2,6 +2,16 @@ function username() {
     var userinput = document.getElementById('nombre');
         console.log(userinput)
 }
+
+function res(){
+    var respuesta = String(document.getElementsByClassName(radio_q).getAttribute('value'))
+    if (respuesta = 'mala'){
+        console.log('oh, fallaste')
+    }
+    else {
+        console.log('bien')
+    }
+}
 $(document).ready(function(){
     var mujer = $(".mujer");
     var hombre = $(".hombre");
