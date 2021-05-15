@@ -4,7 +4,7 @@ function username() {
 }
 
 function res(){
-    var respuesta = String(document.getElementsByClassName(radio_q).getAttribute('value'))
+    var respuesta = String(document.getElementsByClassName(radio_q).getAttribute('value'));
     if (respuesta = 'mala'){
         console.log('oh, fallaste')
     }
