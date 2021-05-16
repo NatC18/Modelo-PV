@@ -134,3 +134,36 @@ h1{
 .res_radio{
     font-size: 30px;
 }
+#nvl_comida{
+  position: relative;
+  float: left;
+  margin-left: 85px;
+}
+#nvl_acento_idioma{
+  position: relative;
+  float: center;
+  margin-left: 155px;
+  }
+#nvl_tradicion_cultura{
+  position: relative;
+  float: right;
+  margin-right: 85px;
+}
+#mujer_dialogo1{
+  float: right;
+  position: relative;
+  margin-right: 100px;
+}
+#mujer_asiatica1{
+  position:relative;
+  float:left;
+  margin-left: 155px;
+}
+#texto1{
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  position: bottom;
+  margin-top:500px;
+  margin-left: 100px;
+}
