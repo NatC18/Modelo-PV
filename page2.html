@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="style_fruna.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="javafruna.js"></script>
+    </head>
+
+    <body>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <p class="titulo_niveles" id='saludo'></p>
+        <h1 class='titulo_niveles'>Marca una respuesta<h1>
+        <div class='container'>
+            <form > 
+                <input class='radio_q' type='radio' name='res' value='correcta' id='opcion1'>
+                <label class='radio_res' for="opcion1">Opción a</label><br>
+                <input class='radio_q' type='radio' name='res' value='mala' id='opcion2'>   
+                <label class='radio_res' for="opcion2">Opción b</label><br>           
+                <input class='radio_q' type='radio' name='res' value='mala' id='opcion3'>
+                <label class='radio_res' for="opcion3">Opción c</label><br> 
+                
+                <button id="radio_btn" class = 'ingresar'>Continuar</button>
+            </form>    
+        </div>
+
+        <script>
+            
+            var radioSelect;
+            var radioAns;
+            var greet = '¡Hola '+ name + '!';
+
+            $(document).ready(function(){
+
+                $('#saludo').text(greet)
+                    
+                $('#radio_btn').on('click',function () {
+                    if ($('input:radio[name=res]:checked').val() != undefined) {
+                        radioSelect = $('input:radio[name=res]:checked').val()
+                    } else {
+                        alert("Por favor elija una respuesta.");
+                        $( "#mainContent" ).load( "page2.html" );
+                    }
+
+                    $("#mainContent").empty();
+                    $( "#mainContent" ).load( "page3.html" );
+            
+                })
+
+            });
+        </script>
+
+    </body>    
+</html>
