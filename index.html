@@ -8,14 +8,14 @@
     </head>
 
     <body>
-        <div id="navbar"> <!--nav bar-->
-            <header>
-                <nav>
-                    <ul>
-                    <li><a href ="index.html" class="link">INICIO</a></li>
-                    </ul>
-                </nav>
-            </header>
+        <div id="nav"> <!--nav bar-->
+            <script>
+            $(document).ready(function(){
+                $("#nav").empty();
+                $( "#nav" ).load( "nav.html" );
+            });
+
+            </script>
         </div> 
 
 
