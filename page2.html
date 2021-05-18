@@ -11,10 +11,21 @@
         <br>
         <br>
         <br>
-
-        <p class="titulo_niveles" id='saludo'></p>
-        <p class='titulo_niveles'>Marca una respuesta<p>
+        <div class='div_parr'>
+            <p class="titulo_niveles" id='saludo'></p>
+            <p class = 'parr'>Es otro día de colegio, y por fin terminaron las clases de la mañana. Entre tanto estudio y correr en el recreo, 
+                esperas con ansias la hora del almuerzo. Cuando por fin te sientas a comer el sándwich de queso que trajiste de tu casa, 
+                sientes un olor raro que te hace fijarte de dónde viene.</p> 
+    
+            <p class = 'parr'>Al mirar a tu alrededor, te das cuenta de que Arnaav, tu compañero nuevo que viene de la India, trajo un de almuerzo con un tipo 
+                de carne de color amarillento, con condimientos y vegetales que tú antes no conocías. El olor te molesta muchísimo, así que decides:</p>
+    
+            <p class='titulo_niveles'>Marca una respuesta<p>
+    
+        </div>
         <div class='container'>
+
+            <!--
             <form > 
                 <input class='radio_q' type='radio' name='res' value='correcta' id='opcion1'>
                 <label class='radio_res' for="opcion1">Opción a</label><br>
@@ -24,7 +35,8 @@
                 <label class='radio_res' for="opcion3">Opción c</label><br> 
                 
                 <button id="radio_btn" class = 'ingresar'>Continuar</button>
-            </form>
+            </form> -->
+
             <br>
             <br>
             <div class='flex-container'>
@@ -57,7 +69,7 @@
 
                 $('#saludo').text(greet)
                     
-                $('#radio_btn').on('click',function () {
+                /*$('#radio_btn').on('click',function () {
                     if ($('input:radio[name=res]:checked').val() != undefined) {
                         radioSelect = $('input:radio[name=res]:checked').val()
                     } else {
@@ -68,7 +80,7 @@
                     $("#mainContent").empty();
                     $( "#mainContent" ).load( "page3.html" );
             
-                })
+                })*/
 
                 $('#btnA').on('click', function () {
                     btnSelect = $('#btnA').val();
